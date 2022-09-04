@@ -41,6 +41,8 @@ https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storag
 FINAL COMMENTS:
 
 1- A pagination feature is missing, as the files have too many rows to be shown it would be nice to have a pagination controller, by the time I realized this it would take me too much time to implement the feature. I added a resultCount variable to return the top results so the solution would not break.
+
 2- My AzureRepository could have been split in more functions to facilitate in the unit tests. I tried to implement a xUnit to test and faced too many problems mocking what was needed to the point that I gave up. There is a partial code of the unit test that I tried to develop.]
+
 3- The tests can be done using the Swagger UI for the two methods. The sensorType is an Enum 0-Temperature, 1-Humidity and 2-Rainfall
 
